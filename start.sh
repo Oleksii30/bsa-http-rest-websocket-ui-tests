@@ -1,0 +1,2 @@
+cd homework
+npm start

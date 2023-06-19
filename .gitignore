@@ -1,0 +1,8 @@
+node_modules
+.vscode
+tmp
+.env
+result.txt
+result.json
+homework
+rawTestResult.json
