@@ -86,6 +86,9 @@ test('SHOULD__NOT_SAVE_USERNAME_WHEN_IT_IS_EXISTS', async ({ browser }) => {
   await login(page1, username);
   await login(page2, username);
 
+  const submit = await page2.locator(".submit-btn");
+  await submit.click();
+
   const usernameFromSessionStorage = await page1.evaluate(() => window.sessionStorage.username);
   const usernameFromSessionStorage1 = await page2.evaluate(() => window.sessionStorage.username);
 
